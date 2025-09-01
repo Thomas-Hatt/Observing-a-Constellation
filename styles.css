@@ -1,0 +1,136 @@
+:root {
+  --primary-font: 'Playfair Display', serif;
+  --secondary-font: 'Poppins', sans-serif;
+  --text-color: #333;
+  --dark-bg: #212529;
+  --card-bg: #f8f9fa;
+  --border-color: #dee2e6;
+}
+
+body {
+  font-family: var(--secondary-font);
+  font-size: 1.15rem;
+  color: var(--text-color);
+  background-color: #f4f7f9;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+h1,
+h2,
+h3,
+.font-italic,
+.text-dark {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none;
+  padding-top: 1rem;
+}
+
+.bg-dark {
+  background-color: var(--dark-bg);
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+.jumbotron {
+  background-color: var(--dark-bg);
+  padding: 60px 48px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.jumbotron::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-scroller {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+  background-color: white;
+  border-radius: 8px;
+  font-weight: 400;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: var(--card-bg);
+  overflow: hidden;
+}
+
+.mb-0 {
+  padding-bottom: 0.25rem;
+}
+
+.mb-1 {
+  padding-bottom: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-left {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title a {
+  color: var(--text-color);
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.image-container {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border: 1px solid black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.col-12 {
+  padding: 3.2rem;
+}
+
+.row {
+  padding: 1.6rem;
+}
+
+.display-7 {
+  text-align: center;
+}
